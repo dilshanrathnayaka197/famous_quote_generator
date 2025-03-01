@@ -74,8 +74,15 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: Colors.amber,
-        title: Text('Random Quotes', style: TextStyle(color: const Color.fromARGB(255, 0, 0, 0), fontWeight: FontWeight.w600),), centerTitle: true,),
+        backgroundColor:  const Color(0xFFFFC107),
+        title: Text(
+          'Random Quotes',
+          style: TextStyle(
+              color: const Color.fromARGB(255, 0, 0, 0),
+              fontWeight: FontWeight.w600),
+        ),
+        centerTitle: true,
+      ),
       body: Padding(
         padding: EdgeInsets.all(16.0),
         child: Column(
@@ -134,7 +141,8 @@ class _HomeScreenState extends State<HomeScreen> {
               onPressed: _getRandomQuote,
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.amber, // Button background color
-                foregroundColor: const Color.fromARGB(255, 0, 0, 0), // Text color
+                foregroundColor:
+                    const Color.fromARGB(255, 0, 0, 0), // Text color
                 padding: EdgeInsets.symmetric(
                     horizontal: 20, vertical: 12), // Adjust padding if needed
                 textStyle: TextStyle(
